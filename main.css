@@ -15,7 +15,7 @@
   font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) and (min-height:40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     height: 50vh;
     background-position: 50% 25%;
@@ -76,25 +76,28 @@
 .plan__feature {
   margin: 0.5rem 0;
 }
-@media (min-width: 40rem){
+@media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
-    min-width: 12.3rem;
+    min-width: 13rem;
     max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
 
-  .plan--highlighted
-  {
+  .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-
+    height: 30rem;
+    z-index: 50;
   }
 }
 #key-features {
@@ -115,7 +118,6 @@
   text-align: center;
 }
 
-
 .key-feature__image {
   background: #ffcede;
   width: 128px;
@@ -133,17 +135,16 @@
   font-size: 1.29rem;
 }
 
-/* h1 {
-    font-family: sans-serif;
-} */
+@media (min-width: 40rem) {
+  .key-feature {
+    width: 30%;
+    max-width: 25rem;
+  }
 
-@media (min-width:40rem) {
-    .key-feature {
-        display: inline-block; 
-         width: 30%;
-         max-width: 25rem;
-        vertical-align: top;
-      }
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .modal {
@@ -194,7 +195,5 @@
   background: #ff5454;
   border-color: #ff5454;
 }
-
-
 
 /* This is mobile first design means all the code is for mobile version and code from media query is for the desktop version. */

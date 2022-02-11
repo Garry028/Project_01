@@ -93,7 +93,7 @@ main {
      max-width: 1000px;
      margin-left: auto;
      margin-right: auto;
-  }
+  } 
 }
 
 @media (min-width: 1000px) {
